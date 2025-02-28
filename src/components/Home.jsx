@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 const api_token='887ed3c65192fa3ad79404986d334219'
 
 
+
 export default function Home() {
 
     const [city, setCity]=useState('Dhaka')
@@ -40,7 +41,7 @@ export default function Home() {
             <h1 className='text-3xl bold' >CooLWeaTher</h1>
             {/* <button className=' border-2 px-5 py-2 bg-orange-700 text-white text-2xl bold rounded-md duration-200 ease transform hover:scale-110 hover:bg-orange-600 hover: hover:text-white'>Settings</button> */}
         </nav>
-        <main className='bg-[url(C:\Users\Star\Desktop\gameField\CoolWeather\src\components\assets\pexels-creative-vix-9754.jpg)] bg-cover bg-center h-screen w-full text-center bg-white py-100 bg-blue-00 text-[#1c1c1c]'>
+        <main className='bg-[url("/bg.jpg")] bg-cover bg-center h-screen w-full text-center bg-white py-100 bg-blue-00 text-[#1c1c1c]'>
 
             <div>
                 <span className='absolute top-30 left-5 text-2xl text-cyan-700'>Current Location: {weatherData.name}[{weatherData.sys?.country}]</span>
